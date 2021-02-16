@@ -190,7 +190,20 @@ i{
     height: 100%;
     align-items: center;
 }
-
+.hero article{
+    position: relative;
+}
+.hero .hero__overlayer{
+    position: absolute;
+    left: -36px;
+    top: -40%;
+    font-size: 23rem;
+    font-weight: bolder;
+    color: var(--primaryColor);
+    opacity: .1;
+    z-index: 0;
+}
+ 
 .hero h1{
     font-size: 7rem;
     color: #fff;
