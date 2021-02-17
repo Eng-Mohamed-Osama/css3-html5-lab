@@ -713,7 +713,9 @@ footer{
 
 
 
+
 /* media query */
+
 @media only screen and (max-width: 1200px){
 
     /* Global */
@@ -724,6 +726,7 @@ footer{
     h3{
         font-size: 2.5rem;
     }
+
 
     /* NavBar */
     .navbar__logo #showNav{
@@ -779,6 +782,10 @@ footer{
         color: #fff;
         margin-left: 0;
     }
+
+
+    /* Hero */
+
     .hero figure {
         position: absolute;
         width: 50%;
@@ -791,6 +798,10 @@ footer{
         margin-bottom: 3em;
         
     }
+
+
+    /*download App */
+
     .download figure{
         width: 100%;
     }
@@ -801,11 +812,18 @@ footer{
     .download__app h3 {
         margin: 0;
     }
+
+
+    /*Feautures */
+
     .Features__feature{
         width: 45%;
         text-align: left;
     
     }
+
+    /* Statics */
+
     .statics__item {
         width: 45%;
         margin-bottom: 3em;
@@ -813,15 +831,24 @@ footer{
     div.statics__item:last-of-type h4{
         margin-left: 1em;
     }
+
+    /* Price */
+
     .pricing .pricing__price{
         width: 35%;
         margin-bottom: 1em;
         
     }
+
+    /*Member ship */
+
     .membership .membership__banner{
         
         width: auto;
     }
+
+    /* Team */
+
     .ourTeam__member{
         width: 45%;
     }
@@ -832,6 +859,9 @@ footer{
         margin-right: .4em;
         padding: 1.2em;
     }
+
+    /*Contact Us */
+
     .contactus article{
         width: 100%;
         text-align: left;
@@ -844,6 +874,9 @@ footer{
     body{
         font-size: 14px;
     }
+
+    /*Hero */
+
     .hero figure {
         display: none;
     }
@@ -851,6 +884,9 @@ footer{
         width: 100%;
         
     }
+
+    /* Member ship */
+
     .membership .membership__banner{
         width: 100%;
         margin-bottom: 1em;
@@ -861,6 +897,9 @@ footer{
     body{
         font-size: 12px;
     }
+
+    /* Hero */
+
     .hero .hero__overlayer{
         left: -36px;
         top: -40%;
@@ -872,8 +911,6 @@ footer{
         color: #fff;
     }
     
-    
-    
     .hero form{
         margin-top: 8em;
     }
@@ -882,11 +919,17 @@ footer{
                 
         margin-bottom: 1em;
     }
+
+    /* Price */
+
     .pricing .pricing__price{
         width: 100%;
         margin-bottom: 1em;
         
     }
+
+    /* Team */
+
     .ourTeam__member{
         width:100%;
     }
@@ -897,13 +940,15 @@ footer{
         margin-right: .4em;
         padding: 1.5em;
     }
-    
+
+    /* Testimonials */
+
     .testimonials .testimonials__quotes p{
         font-size: .8rem;
         width: 70%;
         margin: 0 auto;
     }
-   
+
     .qoutes__rating i{
         font-size: .6rem;
     }
@@ -913,6 +958,9 @@ footer{
     body{
         font-size: 10px;
     }
+
+    /*Hero*/
+
     .hero h1{
         font-size: 4.5rem;
         color: #fff;
@@ -927,11 +975,17 @@ footer{
     .hero p{
         font-size: 1em;
     }
+
+    /* Features */
+
     .Features__feature{
         width: 100%;
         text-align: left;
     
     }
+
+    /*statics*/
+
     .statics__item {
         width: 45%;
         margin-bottom: 5em;
@@ -950,6 +1004,9 @@ footer{
         font-size: 1.6rem;
     
     }
+
+    /* Team */
+
     .ourTeam__overlayer li i{
         font-size: 1rem;
     }
@@ -961,9 +1018,13 @@ footer{
 }
 
 @media (min-width : 321px) and (max-width : 515px){
+
     body{
         font-size: 10px;
     }
+
+    /*hero*/
+
     .hero h1{
         font-size: 3rem;
     }
@@ -975,9 +1036,16 @@ footer{
     }
 }
 @media only screen and (max-width: 320px){
+
+    /* global */
+
     body{
         font-size: 10px;
     }
+
+
+    /* hero */
+
     .hero h1{
         font-size: 3rem;
     }
@@ -987,6 +1055,9 @@ footer{
         font-size: 11rem;
 
     }
+
+    /* statics */
+
     .statics__item h6{
         
         font-size: .8rem;
