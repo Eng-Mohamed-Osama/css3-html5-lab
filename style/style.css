@@ -119,6 +119,9 @@ i{
 }
 
 
+.links__active{
+    color: var(--primaryColor);
+}
 
 
 /* NavBar */
@@ -135,7 +138,13 @@ i{
     font-size: 5rem;
     color: #fff;
     font-weight: bolder;
+    position: relative;
 }
+
+.navbar__logo #showNav {
+   display: none;
+}
+
 
 .navbar__links{
     align-items: center;
@@ -182,7 +191,7 @@ i{
 
 .hero figure{
     position: absolute;
-    width: 43%;
+    width: 50%;
     bottom: -170px;
     right: 4%;
 }
@@ -211,6 +220,7 @@ i{
 .hero p{
     color: #fff;
     font-weight: bolder;
+    font-size: 1.1rem;
 }
 
 
@@ -289,6 +299,7 @@ i{
     box-shadow: 3px 2px 9px #0000001f;
     margin-right: 1em;
     margin-top: .5em;
+    margin-bottom: 1em;
     border: 1px solid var(--contentColor);
 }
 .download__app  .btn i{
@@ -356,10 +367,12 @@ i{
     width: 100%;
     padding-top: 8em;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .statics__item {
     width: 22%;
     text-align: center;
+    margin-bottom: 0;
 }
 .statics__item , .statics__item i{
     color: #fff;
@@ -677,7 +690,7 @@ i{
     border: none;
     background: #f54c77;
     opacity: .6;
-    transition: .2 opacity ease-in-out;
+    transition: opacity .2s  ease-in-out;
     cursor: pointer;
 }
 .contactus #scrollTop i{
@@ -695,4 +708,299 @@ i{
 
 footer{
     height:50vh;
+}
+
+
+
+
+/* media query */
+@media only screen and (max-width: 1200px){
+
+    /* Global */
+
+    body{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+
+    /* NavBar */
+    .navbar__logo #showNav{
+        position: absolute;
+        right: 2%;
+        display: block;
+        color: #ffff;
+        bottom: 20%;
+        padding: 1em 1em;
+        border: none;
+        background: #f54c77;
+        opacity: .6;
+        transition: opacity .2s ease-in-out;
+        cursor: pointer;
+    }
+    .navbar__logo #showNav:hover{
+        opacity: 1;
+    }
+    .navbar__logo #showNav i{
+        margin-top: 0;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .navbar .container{
+        display: block;
+    }
+    .navbar .d-flex{
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+    }
+    .show__navbar{
+        display: block;
+        height: auto;
+        transition: all .3s ease-in-out;
+    }
+    .navbar__links li {
+        font-size: 1rem;
+        display: block;
+    }
+    .navbar__links li a {
+        padding: .5em;
+    }
+    .navbar__links li a.btn {
+        padding: .5em 1.5em;
+    }
+    
+    .navbar__links .btn {
+        background: transparent;
+        border: 1px solid var(--contentColor);
+        color: #fff;
+        margin-left: 0;
+    }
+    .hero figure {
+        position: absolute;
+        width: 50%;
+        bottom: -12%;
+        right: 4%;
+        display: block;
+    }
+    .services__service{
+        width: 32%;
+        margin-bottom: 3em;
+        
+    }
+    .download figure{
+        width: 100%;
+    }
+    .download__app{
+        width: 100%;
+        text-align: left;
+    }
+    .download__app h3 {
+        margin: 0;
+    }
+    .Features__feature{
+        width: 45%;
+        text-align: left;
+    
+    }
+    .statics__item {
+        width: 45%;
+        margin-bottom: 3em;
+    }
+    div.statics__item:last-of-type h4{
+        margin-left: 1em;
+    }
+    .pricing .pricing__price{
+        width: 35%;
+        margin-bottom: 1em;
+        
+    }
+    .membership .membership__banner{
+        
+        width: auto;
+    }
+    .ourTeam__member{
+        width: 45%;
+    }
+    .ourTeam__overlayer li i{
+        font-size: 1.5rem;
+    }
+    .ourTeam__overlayer li.btn{
+        margin-right: .4em;
+        padding: 1.2em;
+    }
+    .contactus article{
+        width: 100%;
+        text-align: left;
+    }
+    .contactus form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 992px){
+    body{
+        font-size: 14px;
+    }
+    .hero figure {
+        display: none;
+    }
+    .services__service{
+        width: 100%;
+        
+    }
+    .membership .membership__banner{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+   
+}
+@media only screen and (max-width: 768px){
+    body{
+        font-size: 12px;
+    }
+    .hero .hero__overlayer{
+        left: -36px;
+        top: -40%;
+        font-size: 19rem;
+    }
+     
+    .hero h1{
+        font-size: 5rem;
+        color: #fff;
+    }
+    
+    
+    
+    .hero form{
+        margin-top: 8em;
+    }
+    
+    .hero form input{
+                
+        margin-bottom: 1em;
+    }
+    .pricing .pricing__price{
+        width: 100%;
+        margin-bottom: 1em;
+        
+    }
+    .ourTeam__member{
+        width:100%;
+    }
+    .ourTeam__overlayer li i{
+        font-size: 2rem;
+    }
+    .ourTeam__overlayer li.btn{
+        margin-right: .4em;
+        padding: 1.5em;
+    }
+    
+    .testimonials .testimonials__quotes p{
+        font-size: .8rem;
+        width: 70%;
+        margin: 0 auto;
+    }
+   
+    .qoutes__rating i{
+        font-size: .6rem;
+    }
+    
+}
+@media only screen and (max-width: 576px){
+    body{
+        font-size: 10px;
+    }
+    .hero h1{
+        font-size: 4.5rem;
+        color: #fff;
+    }
+    .hero .hero__overlayer{
+       
+        left: -30px;
+        top: -38%;
+        font-size: 15rem;
+    
+    }
+    .hero p{
+        font-size: 1em;
+    }
+    .Features__feature{
+        width: 100%;
+        text-align: left;
+    
+    }
+    .statics__item {
+        width: 45%;
+        margin-bottom: 5em;
+    }
+    .statics__item h6{
+        
+        font-size: 1rem;
+        line-height: 1em;
+    
+    }
+    .statics__item h4{
+        font-size: 2.5em;
+        margin-right: .3em;
+    }
+    .statics__item i{
+        font-size: 1.6rem;
+    
+    }
+    .ourTeam__overlayer li i{
+        font-size: 1rem;
+    }
+    .ourTeam__overlayer li.btn{
+        margin-right: .4em;
+        padding: 1em;
+    }
+
+}
+
+@media (min-width : 321px) and (max-width : 515px){
+    body{
+        font-size: 10px;
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
+    .hero .hero__overlayer{
+        left: -21px;
+        top: -27%;
+        font-size: 11rem;
+
+    }
+}
+@media only screen and (max-width: 320px){
+    body{
+        font-size: 10px;
+    }
+    .hero h1{
+        font-size: 3rem;
+    }
+    .hero .hero__overlayer{
+        left: -21px;
+        top: -27%;
+        font-size: 11rem;
+
+    }
+    .statics__item h6{
+        
+        font-size: .8rem;
+        line-height: 1em;
+    
+    }
+    .statics__item h4{
+        font-size: 2.5em;
+        margin-right: .3em;
+    }
+    .statics__item i{
+        font-size: 1.5rem;
+    
+    }
+    
+    
 }
