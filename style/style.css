@@ -577,8 +577,7 @@ i{
     top:0;
     bottom: 0;
     left: 0;
-    background: var(--secandryColor);
-    opacity: .9;
+    background:#614ca7ce;
     transform: scale(0);
     transition: all .2s ease-in-out;
 }
